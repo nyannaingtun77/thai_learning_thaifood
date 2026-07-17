@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<!-- saved from url=(0190)file:///C:/Users/user/Downloads/%E0%B8%82%E0%B8%99%E0%B8%A1%E0%B8%88%E0%B8%B5%E0%B8%99%E0%B8%99%E0%B9%89%E0%B8%B3%E0%B9%80%E0%B8%87%E0%B8%B5%E0%B9%89%E0%B8%A2%E0%B8%A7%20Presentation_v1.html -->
+<html lang="th"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <title>ขนมจีนน้ำเงี้ยว Presentation</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Prompt:wght@400;600;700&family=Sarabun:wght@400;600&display=swap');
+        
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        
+        body {
+            font-family: 'Sarabun', sans-serif;
+            background-color: #f5f2eb;
+            color: #332a24;
+            padding: 40px 0;
+        }
+
+        .presentation-container {
+            width: 100%;
+            max-width: 1024px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            gap: 40px;
+        }
+
+        .slide {
+            width: 100%;
+            aspect-ratio: 16 / 9;
+            background-color: #fdfbf7;
+            border: 1px solid #e6dfd3;
+            border-radius: 12px;
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.04);
+            position: relative;
+            overflow: hidden;
+            display: table;
+            table-layout: fixed;
+            padding: 60px;
+        }
+
+        .slide-cell {
+            display: table-cell;
+            vertical-align: middle;
+            text-align: center;
+        }
+
+        h1, h2, h3 {
+            font-family: 'Prompt', sans-serif;
+            font-weight: 700;
+            color: #8c251c;
+            line-height: 1.4;
+        }
+
+        .slide-1 h1 {
+            font-size: 38px;
+            margin-bottom: 15px;
+        }
+        .slide-1 p {
+            font-size: 22px;
+            color: #615349;
+        }
+
+        .slide-2 h2, .slide-3 h2 {
+            font-size: 34px;
+            color: #8c251c;
+        }
+
+        .layout-split {
+            display: table;
+            width: 100%;
+            height: 100%;
+            table-layout: fixed;
+        }
+
+        .layout-left, .layout-right {
+            display: table-cell;
+            vertical-align: middle;
+            width: 50%;
+            text-align: left;
+            padding: 0 20px;
+        }
+
+        .layout-center-text {
+            text-align: center;
+            vertical-align: middle;
+        }
+
+        .slide-image {
+            width: 100%;
+            height: 320px;
+            border-radius: 8px;
+            overflow: hidden;
+            background-color: #eae3d8;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+        }
+
+        .slide-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .slide-4 h2 {
+            font-size: 34px;
+        }
+
+        .ingredients-title {
+            font-size: 28px;
+            text-align: left;
+            margin-bottom: 25px;
+            color: #8c251c;
+            border-left: 5px solid #2c6e49;
+            padding-left: 15px;
+        }
+
+        .ingredients-grid-5 {
+            display: table;
+            width: 100%;
+            border-collapse: separate;
+            border-spacing: 12px;
+        }
+
+        .ingredients-row {
+            display: table-row;
+        }
+
+        .ingredient-card {
+            display: table-cell;
+            background: #fcfbfa;
+            border: 1px solid #eadecc;
+            border-radius: 6px;
+            padding: 10px;
+            text-align: center;
+            vertical-align: top;
+            width: 20%;
+        }
+
+        .ingredient-thumb {
+            width: 100%;
+            height: 75px;
+            background: #ebdcc7;
+            border-radius: 4px;
+            overflow: hidden;
+        }
+
+        .ingredient-thumb img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .ingredient-name {
+            font-size: 14px;
+            font-weight: 600;
+            color: #4a3e35;
+            margin-top: 8px;
+        }
+
+        .ingredients-grid-7 {
+            display: table;
+            width: 100%;
+            border-collapse: separate;
+            border-spacing: 12px;
+        }
+        
+        .ingredient-card-7 {
+            display: table-cell;
+            background: #fcfbfa;
+            border: 1px solid #eadecc;
+            border-radius: 6px;
+            padding: 12px;
+            text-align: center;
+            vertical-align: top;
+            width: 20%;
+        }
+
+        .ingredient-card-7 .ingredient-thumb {
+            height: 110px;
+        }
+
+        .slide-6 h2, .slide-8 h2, .slide-9 h2, .slide-10 h2, .slide-11 h2 {
+            font-size: 36px;
+        }
+
+        .slide-12 h1 {
+            font-size: 42px;
+            color: #2c6e49;
+        }
+
+        .slide-number {
+            position: absolute;
+            bottom: 20px;
+            right: 30px;
+            font-size: 14px;
+            color: #a89a8e;
+            font-family: 'Prompt', sans-serif;
+        }
+    </style>
+</head>
+<body>
+
+<div class="presentation-container">
+
+    <!-- Slide 1 -->
+    <div class="slide slide-1">
+        <div class="slide-cell">
+            <h1>สวัสดีครับ</h1>
+            <p>วันนี้ฉันจะมานำเสนอเกี่ยวกับอาหารไทยชื่อ ขนมจีนน้ำเงี้ยว ครับ</p>
+            <div class="slide-number">1</div>
+        </div>
+    </div>
+
+    <!-- Slide 2 -->
+    <div class="slide">
+        <div class="layout-split">
+            <div class="layout-left layout-center-text">
+                <h2>ขนมจีนน้ำเงี้ยว</h2>
+            </div>
+            <div class="layout-right">
+                <div class="slide-image">
+                    <img src="./ขนมจีนน้ำเงี้ยว Presentation_v1_files/fec5131bdcc74dc6bcfeba32f02878b1.jpg" alt="ขนมจีนน้ำเงี้ยว">
+                </div>
+            </div>
+        </div>
+        <div class="slide-number">2</div>
+    </div>
+
+    <!-- Slide 3 -->
+    <div class="slide">
+        <div class="layout-split">
+            <div class="layout-left layout-center-text">
+                <h2>อาหารที่ฉันเลือกคือ ขนมจีนน้ำเงี้ยว</h2>
+            </div>
+            <div class="layout-right">
+                <div class="slide-image">
+                    <img src="./ขนมจีนน้ำเงี้ยว Presentation_v1_files/sddefault.jpg" alt="ขนมจีนน้ำเงี้ยว">
+                </div>
+            </div>
+        </div>
+        <div class="slide-number">3</div>
+    </div>
+
+    <!-- Slide 4 -->
+    <div class="slide">
+        <div class="layout-split">
+            <div class="layout-left layout-center-text">
+                <h2>อาหารนี้เป็นอาหารของ ภาคเหนือ ของ ประเทศไทย</h2>
+            </div>
+            <div class="layout-right">
+                <div class="slide-image">
+                    <img src="./ขนมจีนน้ำเงี้ยว Presentation_v1_files/map_north.jpg" alt="ภาคเหนือของประเทศไทย">
+                </div>
+            </div>
+        </div>
+        <div class="slide-number">4</div>
+    </div>
+
+    <!-- Slide 5 -->
+    <div class="slide" style="padding: 40px 50px;">
+        <div class="ingredients-title">ส่วนผสมหลัก ได้แก่</div>
+        
+        <div class="ingredients-grid-5">
+            <!-- Row 1 -->
+            <div class="ingredients-row">
+                <div class="ingredient-card">
+                    <div class="ingredient-thumb"><img src="./ขนมจีนน้ำเงี้ยว Presentation_v1_files/images" alt="ดอกเงี้ยว"></div>
+                    <div class="ingredient-name">ดอกเงี้ยว</div>
+                </div>
+                <div class="ingredient-card">
+                    <div class="ingredient-thumb"><img src="./ขนมจีนน้ำเงี้ยว Presentation_v1_files/images(1)" alt="ขนมจีน"></div>
+                    <div class="ingredient-name">ขนมจีน</div>
+                </div>
+                <div class="ingredient-card">
+                    <div class="ingredient-thumb"><img src="./ขนมจีนน้ำเงี้ยว Presentation_v1_files/33017224.jpg" alt="เลือดไก่"></div>
+                    <div class="ingredient-name">เลือดไก่</div>
+                </div>
+                <div class="ingredient-card">
+                    <div class="ingredient-thumb"><img src="./ขนมจีนน้ำเงี้ยว Presentation_v1_files/images(2)" alt="กะปิ"></div>
+                    <div class="ingredient-name">กะปิ</div>
+                </div>
+                <div class="ingredient-card">
+                    <div class="ingredient-thumb"><img src="./ขนมจีนน้ำเงี้ยว Presentation_v1_files/photo-1540148426945-6cf22a6b2383" alt="กระเทียม"></div>
+                    <div class="ingredient-name">กระเทียม</div>
+                </div>
+            </div>
+            <!-- Row 2 -->
+            <div class="ingredients-row">
+                <div class="ingredient-card">
+                    <div class="ingredient-thumb"><img src="./ขนมจีนน้ำเงี้ยว Presentation_v1_files/photo-1508747703725-719777637510" alt="หัวหอม"></div>
+                    <div class="ingredient-name">หัวหอม</div>
+                </div>
+                <div class="ingredient-card">
+                    <div class="ingredient-thumb"><img src="./ขนมจีนน้ำเงี้ยว Presentation_v1_files/ArticlePic_1670x1095-01_Artboard-1-03-1-1024x671-1.jpg" alt="พริกแห้ง"></div>
+                    <div class="ingredient-name">พริกแห้ง</div>
+                </div>
+                <div class="ingredient-card">
+                    <div class="ingredient-thumb"><img src="./ขนมจีนน้ำเงี้ยว Presentation_v1_files/6jyriw.jpg" alt="มะเขือส้ม"></div>
+                    <div class="ingredient-name">มะเขือส้ม</div>
+                </div>
+                <div class="ingredient-card">
+                    <div class="ingredient-thumb"><img src="./ขนมจีนน้ำเงี้ยว Presentation_v1_files/photo-1590502593747-42a996133562" alt="มะนาว"></div>
+                    <div class="ingredient-name">มะนาว</div>
+                </div>
+                <div class="ingredient-card">
+                    <div class="ingredient-thumb"><img src="./ขนมจีนน้ำเงี้ยว Presentation_v1_files/29ec577256cf73f4f4e063482cd8ddb8_tn" alt="ถั่วเน่า"></div>
+                    <div class="ingredient-name">ถั่วเน่า</div>
+                </div>
+            </div>
+            <!-- Row 3 -->
+            <div class="ingredients-row">
+                <div class="ingredient-card">
+                    <div class="ingredient-thumb"><img src="./ขนมจีนน้ำเงี้ยว Presentation_v1_files/photo-1474979266404-7eaacbcd87c5" alt="น้ำมัน"></div>
+                    <div class="ingredient-name">น้ำมัน</div>
+                </div>
+                <div class="ingredient-card">
+                    <div class="ingredient-thumb"><img src="./ขนมจีนน้ำเงี้ยว Presentation_v1_files/8850069011019_1-20260608101855-.jpg" alt="เกลือ"></div>
+                    <div class="ingredient-name">เกลือ</div>
+                </div>
+                <div class="ingredient-card">
+                    <div class="ingredient-thumb"><img src="./ขนมจีนน้ำเงี้ยว Presentation_v1_files/HAT_YAI_MARKET_2.jpg" alt="พริกแกง"></div>
+                    <div class="ingredient-name">พริกแกง</div>
+                </div>
+                <div style="display: table-cell;"></div>
+                <div style="display: table-cell;"></div>
+            </div>
+        </div>
+        <div class="slide-number">5</div>
+    </div>
+
+    <!-- Slide 6 -->
+    <div class="slide">
+        <div class="layout-split">
+            <div class="layout-left layout-center-text">
+                <h2 style="color: #d9381e;">รสชาติของอาหารนี้ เผ็ด และ เค็ม</h2>
+            </div>
+            <div class="layout-right">
+                <div class="slide-image">
+                    <img src="./ขนมจีนน้ำเงี้ยว Presentation_v1_files/60558.jpg" alt="รสเผ็ดและเค็ม">
+                </div>
+            </div>
+        </div>
+        <div class="slide-number">6</div>
+    </div>
+
+    <!-- Slide 7 -->
+    <div class="slide" style="padding: 50px 60px;">
+        <div class="ingredients-title" style="border-left-color: #8c251c;">นิยมรับประทานกับ</div>
+        
+        <div class="ingredients-grid-7" style="margin-top: 40px;">
+            <div class="ingredients-row">
+                <div class="ingredient-card-7">
+                    <div class="ingredient-thumb"><img src="./ขนมจีนน้ำเงี้ยว Presentation_v1_files/BQreV3GvWI_2-2.jpg" alt="แคบหมู"></div>
+                    <div class="ingredient-name" style="font-size: 16px;">แคบหมู</div>
+                </div>
+                <div class="ingredient-card-7">
+                    <div class="ingredient-thumb"><img src="./ขนมจีนน้ำเงี้ยว Presentation_v1_files/original-1634632690275.jpg" alt="ผักชี"></div>
+                    <div class="ingredient-name" style="font-size: 16px;">ผักชี</div>
+                </div>
+                <div class="ingredient-card-7">
+                    <div class="ingredient-thumb"><img src="./ขนมจีนน้ำเงี้ยว Presentation_v1_files/images(3)" alt="ต้นหอม"></div>
+                    <div class="ingredient-name" style="font-size: 16px;">ต้นหอม</div>
+                </div>
+                <div class="ingredient-card-7">
+                    <div class="ingredient-thumb"><img src="./ขนมจีนน้ำเงี้ยว Presentation_v1_files/images(4)" alt="กระเทียมเจียว"></div>
+                    <div class="ingredient-name" style="font-size: 16px;">กระเทียมเจียว</div>
+                </div>
+                <div class="ingredient-card-7">
+                    <div class="ingredient-thumb"><img src="./ขนมจีนน้ำเงี้ยว Presentation_v1_files/Green-cabbage-Pickle2.jpg" alt="ผักกาดดองเปรี้ยว"></div>
+                    <div class="ingredient-name" style="font-size: 16px;">ผักกาดดองเปรี้ยว</div>
+                </div>
+            </div>
+        </div>
+        <div class="slide-number">7</div>
+    </div>
+
+    <!-- Slide 8 -->
+    <div class="slide">
+        <div class="layout-split">
+            <div class="layout-left layout-center-text">
+                <h2>ราคาประมาณ 80 บาท</h2>
+            </div>
+            <div class="layout-right">
+                <div class="slide-image">
+                    <img src="./ขนมจีนน้ำเงี้ยว Presentation_v1_files/photo-1580519542036-c47de6196ba5" alt="ราคา 80 บาท">
+                </div>
+            </div>
+        </div>
+        <div class="slide-number">8</div>
+    </div>
+
+    <!-- Slide 9 -->
+    <div class="slide">
+        <div class="layout-split">
+            <div class="layout-left layout-center-text">
+                <h2 style="font-size: 30px;">สามารถหาซื้อได้ที่ ร้านอาหารที่ขายอาหารจากภาคเหนือ</h2>
+            </div>
+            <div class="layout-right">
+                <div class="slide-image">
+                    <img alt="ร้านอาหารภาคเหนือ" src="./ขนมจีนน้ำเงี้ยว Presentation_v1_files/sam_1036.jpg">
+                </div>
+            </div>
+        </div>
+        <div class="slide-number">9</div>
+    </div>
+
+    <!-- Slide 10 -->
+    <div class="slide">
+        <div class="layout-split">
+            <div class="layout-left layout-center-text">
+                <h2>ถ้ามีโอกาส ฉันอยากแนะนำให้ทุกคนลองกิน เพราะ</h2>
+            </div>
+            <div class="layout-right">
+                <div class="slide-image">
+                    <img src="./ขนมจีนน้ำเงี้ยว Presentation_v1_files/width_800" alt="อยากแนะนำให้ทุกคนลองกิน">
+                </div>
+            </div>
+        </div>
+        <div class="slide-number">10</div>
+    </div>
+
+    <!-- Slide 11 -->
+    <div class="slide">
+        <div class="layout-split">
+            <div class="layout-left layout-center-text">
+                <h2>รสชาติคล้ายกับอาหารพม่า</h2>
+            </div>
+            <div class="layout-right">
+                <div class="slide-image">
+                    <img src="./ขนมจีนน้ำเงี้ยว Presentation_v1_files/719874384_1311980274437268_1372897392090019073_n.jpg" alt="รสชาติคล้ายอาหารพม่า">
+                </div>
+            </div>
+        </div>
+        <div class="slide-number">11</div>
+    </div>
+
+    <!-- Slide 12 -->
+    <div class="slide">
+        <div class="slide-cell">
+            <h1>ขอบคุณทุกคนที่รับฟัง ครับ</h1>
+            <div class="slide-number">12</div>
+        </div>
+    </div>
+
+</div>
+
+
+
+</body></html>
